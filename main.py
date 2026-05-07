@@ -27,3 +27,9 @@ def get_date_time() -> dict[str, str]:
         "time_utc": now.strftime("%H:%M:%S"),
         "datetime_utc": now.isoformat(),
     }
+
+
+@app.get("/date")
+def get_current_date() -> dict[str, str]:
+    now = datetime.now(timezone.utc)
+    return {"date_utc": now.strftime("%Y-%m-%d")}
