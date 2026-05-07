@@ -30,3 +30,15 @@ uvicorn main:app --reload
   "unix_timestamp": 1778153700.0
 }
 ```
+
+## CI/CD Secrets
+
+Для workflow в GitHub Actions добавьте следующие Secrets в репозитории:
+
+- `SSH_HOST`
+- `SSH_USER`
+- `SSH_PRIVATE_KEY`
+- `SSH_PORT`
+- `GHCR_USERNAME`
+- `GHCR_TOKEN`
+- `APP_CONTAINER_NAME`
