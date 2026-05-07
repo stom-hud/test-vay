@@ -16,6 +16,7 @@ uvicorn main:app --reload
 
 ## Проверка
 
+- Health-check: `http://127.0.0.1:8000/health`
 - Endpoint времени: `http://127.0.0.1:8000/time`
 - Swagger UI: `http://127.0.0.1:8000/docs`
 
